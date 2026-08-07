@@ -35,11 +35,11 @@ Business Question:
   and when are its sales strongest?
 
 Data Source:
-- data/reporting/sales_reporting_case.csv
+- data/reporting/sales_reporting_miller.csv
 
 Output:
-- docs/images/storytelling_category_sales_case.png
-- docs/images/storytelling_monthly_sales_case.png
+- docs/images/storytelling_category_sales_miller.png
+- docs/images/storytelling_monthly_sales_miller.png
 
 Terminal command to run this file from the root project folder:
 
@@ -72,17 +72,17 @@ from bizintel.utils_viz import plot_bar, plot_line
 DATA_REPORTING: Final[Path] = Path("data/reporting")
 
 # Storytelling input file (created earlier).
-REPORTING_FILE: Final[Path] = DATA_REPORTING / "sales_reporting_case.csv"
+REPORTING_FILE: Final[Path] = DATA_REPORTING / "sales_reporting_miller.csv"
 
 # Storytelling charts output folder so they can appear in our narrative.
 CHARTS_OUTPUT: Final[Path] = Path("docs/images")
 
 # Chart files shown in docs/index.md.
 STORYTELLING_CHART_FILE_1: Final[Path] = (
-    CHARTS_OUTPUT / "storytelling_category_sales_case.png"
+    CHARTS_OUTPUT / "storytelling_category_sales_miller.png"
 )
 STORYTELLING_CHART_FILE_2: Final[Path] = (
-    CHARTS_OUTPUT / "storytelling_monthly_sales_case.png"
+    CHARTS_OUTPUT / "storytelling_monthly_sales_miller.png"
 )
 
 # The selected region defines the focus of this example story.
