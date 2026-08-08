@@ -23,7 +23,7 @@ to get the example projects running on your machine.
 
 The example project answers this business question:
 
-> Which product category contributes the most sales in the selected region,
+> Which product category contributes the most sales in the West region,
 > and when are its sales strongest?
 
 The example follows a general BI storytelling process:
@@ -36,50 +36,41 @@ The example follows a general BI storytelling process:
 6. Explain the findings in your documentation.
 7. Recommend an action or next question.
 
-Your project should follow the same general process,
-but answer a different business question.
 
 ## Phase 4. Technical Modification
 
-Make one small technical modification to the example project.
-
-Possible modifications include:
-
-- Change a selected value.
-- Change a chart title.
-- Change a chart label.
-- Change a chart palette.
-- Change a chart output file name.
-- Display in a different sort order.
-- Change a log message to be more clear or better formatted.
-
-Describe your small technical modification to the example project.
-
-Include:
-
 - What you changed
-- Why you chose that change
-- How you verified that it worked
-- What result, output, chart, metric, or behavior confirmed the change
+  - The .py file was copied and changed to reflect a new name for
+    modifications made.
+  - The chart names were changed to reflect the new images that were
+    to be used in the new business problem
 
-Compared with the example project,
-explain what is different and why the change matters.
+- Why you chose that change
+    I new that I was going to make another change that would impact the visuals in the project, so I wanted to distinguish the outcome files in order to reference them easier.
+- How you verified that it worked
+    I ran the program and was able to see the new .png files in VSCode as well as in the project.log file
+- What result, output, chart, metric, or behavior confirmed the change
+   The visualizations will be the same, however the names of the png files would be changed and the project.log and results on screen would be now visibily show the new file names. 
 
 Was it easy, or surprisingly challenging and why do you think so?
+    This was rather easy
 
 ## Phase 5. Custom Project
 
-Describe your custom BI storytelling project.
 
 ### Basis and Problem
 
 Describe the data you started with.
-
-Include:
+  I queried the dataset sales_reporting_miller.csv.
 
 - Which tables you queried and which columns you used
+  I used the columns Region, Category, YearMonth, and SaleAmount. The data was first filtered to the West region, then grouped by Category to identify the highest-selling product category. Finally, the top category was analyzed by YearMonth to identify monthly sales trends.
+
 - Why those columns are relevant to your business goal
+  These columns directly support the business goal of determining which product category generates the most sales in the West region and identifying when sales are strongest. Region isolates the area being analyzed, Category groups products for comparison, YearMonth shows sales trends over time, and SaleAmount provides the numeric measure used to calculate total sales.
+
 - Any data limitations that affect your conclusions
+  This analysis is based only on the reporting-ready sales data for the selected region. While it helps identify sales trends by category and month, it doesn't tell us why those trends exist. There could be other factors affecting sales, such as promotions, inventory levels, seasonal events, or customer buying habits that aren't included in this dataset.
 
 ### Business Question
 
@@ -87,77 +78,45 @@ State the exact business question you chose.
 
 For example:
 
-> Which product category has the lowest total sales in the selected region, and during which month are its sales weakest?
+Which product category contributes the most sales in the West region,
+> and when are its sales strongest?
 
-Your question should be:
 
-- Clear
-- Specific
-- Answerable with the available data
-- Similar in scope to the example project
-
-Explain:
-
-- Why the question might matter to the business
-- What decision or next step the result could support
-- What **action** could be taken based on the answer
 
 ### Analysis Approach
 
-Describe how you answered the question.
+How you filtered the reporting data: I filtered the reporting-ready data to include only sales from the West region.
 
-Include:
+Which dimension you grouped by: I grouped the data by Category.
 
-- How you filtered the reporting data
-- Which dimension you grouped by
-- Which measure you aggregated
-- Whether you sorted from highest to lowest or lowest to highest
-- How the first result guided the second part of the analysis
-- Which charts you created
+Which measure you aggregated: I aggregated the SaleAmount column by calculating the total sales.
+
+Whether you sorted from highest to lowest or lowest to highest: I sorted the results from highest to lowest to identify the top-selling category.
+
+How the first result guided the second part of the analysis: After identifying the top-selling category, I used that category to analyze monthly sales trends and determine when sales were strongest.
+
+Which charts you created: I created a bar chart showing total sales by category and a line chart showing monthly sales for the top category in the West region.
 
 ### Charts and Evidence
 
-Create at least two connected charts.
+Chart 1
+Title: Sales by Product Category in the West Region
+Axes: X-axis = Product Category, Y-axis = Total Sales Revenue
+Readability: Categories are clearly labeled and easy to compare.
+Saved: The chart was saved in the project output folder and displayed in the documentation page.
+Evidence: This chart identifies the highest-selling product category in the West region and answers the first part of the business question.
 
-The first chart should answer the first part of your business question,
-often an initial comparison or result.
 
-The second chart should be a connected look deeper at that initial result.
-
-For each chart:
-
-- Use a clear title
-- Label the axes
-- Make the chart readable
-- Save the chart in the project
-- Display the chart in this documentation page
-- Explain what evidence the chart provides
 
 ### Findings and Recommendation
 
-Describe what you found and what you recommend.
-
-Include:
-
-- The main result of your analysis
-- Whether the result was expected or surprising
-- A specific recommended business action based on the data
-- One reasonable action or next question
-- Any limitations or cautions
+The analysis identified the highest-selling product category in the West region and showed how its sales changed over time. While I expected one category to stand out, the monthly trends provided additional insight into when sales were strongest. Based on these results, I would recommend focusing promotions and inventory planning around the top-performing category during peak sales periods. As a next step, I would compare the results across other regions to see if the same trends exist. One limitation is that this analysis only shows what happened based on the available sales data and does not explain why those trends occurred.
 
 ### Storytelling Summary
 
-Summarize your custom storytelling project.
 
-Include:
 
-- The business question / problem / goal you addressed
-- The data you started with
-- The main result
-- The insight you produced
-- The action or next question you recommended
-- What you learned about BI storytelling
-- How this process could support business intelligence in general
+My business goal was to identify the highest-selling product category in the West region and determine when that category performed best throughout the year. I started with the reporting-ready sales dataset and filtered it to the West region before comparing total sales by product category. After identifying the top-performing category, I analyzed its monthly sales trends to gain additional insight into when sales were strongest. Based on the results, I recommended focusing promotions and inventory planning around that category during peak sales periods and comparing the findings with other regions to see if similar patterns exist. This project reinforced that BI storytelling is more than creating charts—it is about using data to answer a business question, explain the results, and support informed decision-making. The first chart shows the initial comparison of sales by category, while the second chart builds on that result by showing the monthly sales trend for the top-performing category.
 
 Display at least two charts along with your narrative:
 
