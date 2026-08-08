@@ -87,7 +87,7 @@ STORYTELLING_CHART_FILE_2: Final[Path] = (
 
 # The selected region defines the focus of this example story.
 # Your category and selection will depend on the question you have selected.
-SELECTED_REGION: Final[str] = "East"
+SELECTED_REGION: Final[str] = "West"
 
 
 # === Section 2. Define Reusable Functions ===
