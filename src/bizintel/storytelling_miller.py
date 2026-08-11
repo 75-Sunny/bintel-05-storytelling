@@ -31,7 +31,7 @@ Storytelling process:
 6. Write the story and recommendation in docs/index.md.
 
 Business Question:
-- Which product category contributes the most sales in the East region,
+- Which product category contributes the most sales in the West region,
   and when are its sales strongest?
 
 Data Source:
@@ -44,11 +44,6 @@ Output:
 Terminal command to run this file from the root project folder:
 
 uv run python -m bizintel.storytelling_miller
-
-OBS:
-  Don't edit this file - it should remain a working example.
-  Copy it, rename it with your alias, and modify your copy.
-  If you do, include your command to run it in the docstring above and in README.md.
 """
 
 # === Section 1. Import dependencies and set up constants ===
