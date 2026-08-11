@@ -183,7 +183,7 @@ In your custom project:
 
 Replace these placeholders with screenshots from your own project run:
 
-![Total Sales by Region](./docs/images/storytelling_monthly_sales_case.pngategory_sales_miller.png)
+![Total Sales by Region](.docs/images/storytelling_category_sales_miller.png)
 
 ![Total Sales by Product Category](./docs/images/storytelling_monthly_sales_miller.png)
 
