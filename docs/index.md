@@ -26,36 +26,6 @@ The example project answers this business question:
 > Which product category contributes the most sales in the West region,
 > and when are its sales strongest?
 
-The example follows a general BI storytelling process:
-
-1. Define one clear business question.
-2. Identify the data needed to answer it.
-3. Summarize the data.
-4. Create charts that provide evidence.
-5. Identify the most important results.
-6. Explain the findings in your documentation.
-7. Recommend an action or next question.
-
-
-## Phase 4. Technical Modification
-
-- What you changed
-  - The .py file was copied and changed to reflect a new name for
-    modifications made.
-  - The chart names were changed to reflect the new images that were
-    to be used in the new business problem
-
-- Why you chose that change
-    I new that I was going to make another change that would impact the visuals in the project, so I wanted to distinguish the outcome files in order to reference them easier.
-- How you verified that it worked
-    I ran the program and was able to see the new .png files in VSCode as well as in the project.log file
-- What result, output, chart, metric, or behavior confirmed the change
-   The visualizations will be the same, however the names of the png files would be changed and the project.log and results on screen would be now visibily show the new file names. 
-
-Was it easy, or surprisingly challenging and why do you think so?
-    This was rather easy
-
-## Phase 5. Custom Project
 
 
 ### Basis and Problem
@@ -63,23 +33,24 @@ Was it easy, or surprisingly challenging and why do you think so?
 Describe the data you started with.
   I queried the dataset sales_reporting_miller.csv.
 
-- Which tables you queried and which columns you used
-  I used the columns Region, Category, YearMonth, and SaleAmount. The data was first filtered to the West region, then grouped by Category to identify the highest-selling product category. Finally, the top category was analyzed by YearMonth to identify monthly sales trends.
+- Which tables queried and which columns used
+-
+  Columns used - Region, Category, YearMonth, and SaleAmount
+  Filtered by - West region
+  Grouped by Category to identify the highest-selling product category.
+  Top category was analyzed by YearMonth to identify monthly sales trends.
 
 - Why those columns are relevant to your business goal
+
   These columns directly support the business goal of determining which product category generates the most sales in the West region and identifying when sales are strongest. Region isolates the area being analyzed, Category groups products for comparison, YearMonth shows sales trends over time, and SaleAmount provides the numeric measure used to calculate total sales.
 
 - Any data limitations that affect your conclusions
+
   This analysis is based only on the reporting-ready sales data for the selected region. While it helps identify sales trends by category and month, it doesn't tell us why those trends exist. There could be other factors affecting sales, such as promotions, inventory levels, seasonal events, or customer buying habits that aren't included in this dataset.
 
 ### Business Question
 
-State the exact business question you chose.
-
-For example:
-
-Which product category contributes the most sales in the West region,
-> and when are its sales strongest?
+Which product category contributes the most sales in the West region, and when are its sales strongest?
 
 
 
@@ -117,8 +88,3 @@ The analysis identified the highest-selling product category in the West region 
 
 
 My business goal was to identify the highest-selling product category in the West region and determine when that category performed best throughout the year. I started with the reporting-ready sales dataset and filtered it to the West region before comparing total sales by product category. After identifying the top-performing category, I analyzed its monthly sales trends to gain additional insight into when sales were strongest. Based on the results, I recommended focusing promotions and inventory planning around that category during peak sales periods and comparing the findings with other regions to see if similar patterns exist. This project reinforced that BI storytelling is more than creating charts—it is about using data to answer a business question, explain the results, and support informed decision-making. The first chart shows the initial comparison of sales by category, while the second chart builds on that result by showing the monthly sales trend for the top-performing category.
-
-Display at least two charts along with your narrative:
-
-1. A chart showing the initial comparison
-2. A chart showing the deeper analysis of the selected result
