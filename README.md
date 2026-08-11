@@ -8,18 +8,8 @@
 
 ## Project Description
 
-This project focuses on addressing one specific business goal
-end to end and telling a story with data.
-
-We learn to:
-
-- define a clear business question and KPI (key performance indicator)
-- use reporting-ready data to answer the business question
-- summarize and analyze the relevant data
-- create connected charts that support the findings
-- identify meaningful business insights
-- write a clear, actionable business recommendation
-- tell a story with data
+This project is to look at what the total sales for the selected region over a period of time.
+Then slices it into which category is the biggest contributor to the overall sales in the selected region
 
 ## Working Files
 
@@ -31,11 +21,8 @@ You'll work with these areas:
 - **pyproject.toml** - update authorship & links
 - **zensical.toml** - update authorship & links
 
-## Instructions (pro-analytics-02)
+## Instructions
 
-Follow the
-[step-by-step workflow guide](https://denisecase.github.io/pro-analytics-02/workflow-b-apply-example-project/)
-to complete:
 
 1. Phase 1. **Start & Run**
 2. Phase 2. **Change Authorship**
@@ -110,6 +97,8 @@ uv run python -m bizintel.storytelling_case
 
 # TASK 2: run your own storytelling module that looks at a different problem
 # add your command in the line below
+uv run python -m bizintel.storytelling_miller
+
 
 
 # run common chores
@@ -194,9 +183,9 @@ In your custom project:
 
 Replace these placeholders with screenshots from your own project run:
 
-![Total Sales by Region](./docs/images/Figure_1.png)
+![Total Sales by Region](./docs/images/storytelling_monthly_sales_case.pngategory_sales_miller.png)
 
-![Total Sales by Product Category](./docs/images/Figure_2.png)
+![Total Sales by Product Category](./docs/images/storytelling_monthly_sales_miller.png)
 
 ## Project Documentation
 
